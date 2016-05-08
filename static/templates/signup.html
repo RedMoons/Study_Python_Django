@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+    {%block jumbotron %}  
+      <div class="jumbotron">
+       <div class="container">
+        <h1>Wellcome Visiter!</h1>
+        <p>This is personal project about Python Django web page</p>
+        
+        <p><a class="btn btn-default btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+    {% endblock %}  
+    
+
+
+{% block content %}
+  <div class="col-md-3">
+    <h2>Web service</h2>
+    <p>  Using Python Django work </p>
+    <p> <a class="btn btn-default" href="#" role="button">View details &raquo;</a> </p>
+  </div>
+
+  <div class="col-md-3">
+    <h2>BeautifulSoup library</h2>
+    <p> Using Python scrapy framework </p>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div>
+
+  <div class="col-md-3">
+    <h2>emtpy</h2>
+    <p> Update soon</p>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div>
+
+  <div class="col-md-3">
+    <h1> Pre-Order</h1>
+    <p> Join this course now. Please pre-order</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="6TGKZ69N7KHGJ">
+      
+        <input type="hidden" name="on0" value="Course">
+        <select class="form-control"name="os0">
+        	<option value="Basic">Basic $9.00 USD</option>
+          <option value="Normal">Normal $19.00 USD</option>
+        	<option value="Premium">Premium $199.00 USD</option>
+        </select>
+      
+      <input type="hidden" name="currency_code" value="USD"><br>
+      <input type='submit' class='btn btn-success btn-block' value='submit'>
+    </form>
+
+  </div>
+    
+
+
+		
+{% endblock %}
